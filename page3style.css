@@ -1,8 +1,13 @@
 #ligne1{
-	height: 500px;
+	height: 400px;
 }
 
 #imgcigar{
-	width: 400px;
-	
+	width: 400px;	
+}
+
+.tb{
+	height: 80px;
+	padding: 20px;
+
 }

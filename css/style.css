@@ -12,6 +12,10 @@ nav{
 	color: #FFF
 }
 
+a:hover{
+	text-decoration: none;
+}
+
 .header{
 	background:#FFF;
 	color:#fff;

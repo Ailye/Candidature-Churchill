@@ -1,13 +1,4 @@
-#ligne1{
-	height: 400px;
-}
-
-#imgcigar{
-	width: 445px;	
-}
-
-.tb{
-	height: 80px;
-	padding: 20px;
-
+.row{
+	margin-bottom: 15px;
+	margin-top: 15px;
 }

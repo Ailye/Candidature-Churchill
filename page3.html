@@ -11,10 +11,10 @@
 <body>
 	
 	<div class="container">
-		<div class="row">
+		<div class="row" id="header">
 			<nav class="navbar navbar-light">
- 				<a class="navbar-brand" href="#">Home</a>
- 				<a class="navbar-brand" href="#">Full history</a>
+				<a class="navbar-brand" style="color:#ECF0F1; href="#">Home</a>
+				<a class="navbar-brand" style="color:#ECF0F1;" href="#">Full history</a>
 			</nav>
 			<a href="https://winstonchurchill.org/">
 				<img src="https://1d4vws37vmp124vlehygoxxd-wpengine.netdna-ssl.com/wp-content/themes/churchill/images/logo-fixed.png" alt="The International Churchill Society">
@@ -22,47 +22,52 @@
 		</div>
 		<div class="row">
 			<div class="col-12">
-				<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">Compétences</th>
-      <th scope="col">Mastered</th>
-      <th scope="col">Elite</th>
-      <th scope="col">God</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Leadership</th>
-      <td><i class="fas fa-check"></i></i></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">Mindset</th>
-      <td></td>
-      <td><i class="fas fa-check"></i></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">Politic skills</th>
-      <td></td>
-      <td></td>
-      <td><i class="fas fa-check"></i></td>
-    </tr>
-  </tbody>
-</table>
+				<table class="table table-bordered" id="tableau">
+					<thead>
+						<tr>
+							<th scope="col">Compétences</th>
+							<th scope="col">Mastered</th>
+							<th scope="col">Elite</th>
+							<th scope="col">God</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Leadership</th>
+							<td><i class="fas fa-check"></i></i></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">Mindset</th>
+							<td></td>
+							<td><i class="fas fa-check"></i></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">Politic skills</th>
+							<td></td>
+							<td></td>
+							<td><i class="fas fa-check"></i></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>		
 		</div>
-		<div class="row"">
-			<div class="col-7 text-justify">
+		<div class="row">
+			<div class="col-7 text-justify" id="conclusion">
 				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed volutpat odio. Etiam convallis tellus mi. Suspendisse commodo arcu nec purus bibendum interdum. Proin rhoncus metus dui, eget sodales lacus ullamcorper sit amet. Quisque quis blandit massa. Donec vulputate lectus id risus consequat pellentesque. Sed rhoncus posuere mauris fermentum tincidunt. Cras in erat nec elit eleifend fermentum lacinia sit amet mauris. Morbi sit amet neque gravida, iaculis nulla nec, ullamcorper dolor.
 
-				Integer sollicitudin lectus vitae semper tincidunt. Sed sed augue vel nibh cursus imperdiet eget ut tellus. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur maximus fringilla tempor. 
+					Integer sollicitudin lectus vitae semper tincidunt. Sed sed augue vel nibh cursus imperdiet eget ut tellus. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur maximus fringilla tempor. 
 				</p>
 			</div>
 			<div class="col-5 "> 
-				<img src="Images/Churchill2.jpg" class="img-fluid" alt="Responsive image" alt="Churchcigar">
+				<figure>
+					<a href="https://www.google.fr/search?q=churchill&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjys97Rm7rdAhXMKsAKHT4tDGAQ_AUICigB&biw=1853&bih=901#imgrc=tpXmukEDSN5Y8M:">
+						<img src="Images/Churchill2.jpg" class="img-fluid" alt="Churchcigar" id="Churchcigar">
+					</a>
+					<figcaption>Two finger is better</figcaption> 
+				</figure>
 			</div>
 		</div>
 		<div class="row">
@@ -71,31 +76,25 @@
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/lqmCWNzgvmk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 		</div>
-		<div class="row"><h2>Get in touch</h2></div>
+		<div class="row"><h2 class="mx-auto">Get in touch</h2></div>
 		<div class="row form-group">
 			<label for="Email">Email adress</label>
 			<input type="Email" name="Email" class="form-control">
 			<label for="job">Job proposal</label>
 			<select id="selector" class="form-control">
-  				<option id="opt1">World dictator</option>
-  				<option id="opt2">Imperator</option>
-  				<option id="opt3">Painter</option>
-  				<option id="opt4">Playboy</option>
+				<option id="opt1">World dictator</option>
+				<option id="opt2">Imperator</option>
+				<option id="opt3">Painter</option>
+				<option id="opt4">Playboy</option>
 			</select>
 			<label for="message">Your message</label>
-			<textarea class="form-control" id="jobdep"></textarea>
+			<textarea class="form-control" rows="4" id="jobdep"></textarea>
 			<button type="submit" class="btn btn-secondary">Send</button>
 		</div>
-
-		</div>
-		<div class="row">
-			<div class="col-md-6 offset-md-3"><span> Ce site a été codé par le groupe composé de Jonathan, Victor, Kilian et Pierre-Hugo. Promo WCS Septembre 2018.	
-			</span>
-			</div>
-		</div>
+		<div class="row" id="footer">
+		<div class="col-md-10 offset-md-1"><span> Ce site a été codé par le groupe composé de Jonathan, Victor, Kilian et Pierre-Hugo. &copy; Promo WCS Septembre 2018.	
+		</span>
 	</div>
-
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

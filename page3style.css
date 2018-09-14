@@ -2,3 +2,41 @@
 	margin-bottom: 15px;
 	margin-top: 15px;
 }
+
+#header{
+	background-color: #346684;
+}
+
+#tableau{
+	background-color: #ECF0F1;
+}
+
+#conclusion{
+	background-color: #93AFB6;
+}
+
+p{
+	font-size: 20px;
+	color: #F8F8F9;
+}
+
+label{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#jobdep{
+	margin-bottom: 10px;
+}
+
+#footer{
+	background-color: #474571;
+}
+
+span{
+	color: #F8F8F9;
+}
+
+#Churchcigar:hover {
+	opacity: 0.5;
+}

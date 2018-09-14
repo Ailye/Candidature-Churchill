@@ -15,8 +15,16 @@ $("#selector").on("click", function(event)
 		}
 	}			)
 
-// console.log(document.getElementById("selector").value);
 
 
+$("Churchcigar").on("hover", function(event)
+
+	{
+		write("<h3>Galerie photos du bogosse</h3>");
+
+
+	}
+
+					)
 
 

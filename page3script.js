@@ -1,19 +1,22 @@
 'use script'
-let txt = document.getElementById(jobdep);
-$("#selector").on("click", function(event){
-		console.log("CA MARCHE");
-		txt = "Dear World dictator";
-		console.log(event);
+$("#jobdep").text("Dear World dictator");
+$("#selector").on("click", function(event)
+	{
+		switch($("#selector").val())
+		{
+		case "World dictator" : $("#jobdep").text("Dear World dictator");
+		break;
+		case "Imperator" : $("#jobdep").text("Ô Imperator");
+		break;
+		case "Painter" : $("#jobdep").text("Glorious painter");
+		break;
+		case "Playboy" : $("#jobdep").text("Hey, sexy");
+		break;
+		}
+	}			)
 
-	});
-$("#selector").selectedIndex
-console.log($("#selector"))
+// console.log(document.getElementById("selector").value);
 
 
-switch(indexselected)
-{
-	case 1 : function addtext(text) {document.form.textarea.value = document.form.textarea.value+= text;} ("Dear World dictator")
-	case 2 : document.write("Ô Imperator")
-	case 3 : document.write("Glorious painter")
-	case 4 : document.write("Hey, sexy")
-}
+
+

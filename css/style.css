@@ -71,6 +71,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', end
 	padding-bottom: 1em;
 }
 
+.card-block{
+	margin-top: 15px;
+}
+
 .footer {
 	position: absolute;
 	bottom: 0;

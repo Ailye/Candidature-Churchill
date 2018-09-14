@@ -12,9 +12,10 @@
 
     <link rel="stylesheet" href="css/page2.css">
 </head>
-<body>
 
-<header  >
+<div class="container-fluid">
+
+<header>
 <!-- faire un menu -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -47,24 +48,23 @@
 
 <h1> Who are you, Churchill!.</h1>
 <!-- cAROUSEL DE churchill avec citation-->
-<div class= "carousel">
+<div class= "carousel col-12">
 
 		<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   			<div class="carousel-inner">
        <div class="carousel-item active">
-      <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+
+      <img class="d-block w-100 clo-12" src="img/image crousel/silver1V.jpg" alt="First slide">
+    </div>
+    
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/image crousel/silver2.jpg" alt="Third slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="four slide">
+      <img class="d-block w-100" src="img/image crousel/Silver3.jpg" alt="four slide">
     </div>
      <div class="carousel-item">
-      <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="five slide">
+      <img class="d-block w-100" src="img/image crousel/Silver4.jpg" alt="five slide">
     </div>
     </div>
   		<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -81,7 +81,10 @@
 
 	<div class="row d-flex justify-content-around">
 		<div class ="présentation  col-3">
-		<p>la premiére question que l'on peut me poser c'est quel genre d'homme j'étais? Etais-je un militaire et combattant pour mon pays? étais-je un peintre? un homme politique, un stratège?</p>
+			
+		<p><figure>
+			<img class="jour" src="img/journaliste.jpg" alt="presentation"
+		</figure>la premiére question que l'on peut me poser c'est quel genre d'homme j'étais? Etais-je un militaire et combattant pour mon pays? étais-je un peintre? un homme politique, un stratège?</p>
 		</div>
 
 <!--modal de présentation de churchill-->
@@ -108,7 +111,8 @@
 
      		</div>
       		<div class="modal-footer">
-        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Valide</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       			</div>
     		</div>
@@ -133,13 +137,13 @@
 <!--modal de sa mére-->
 
 		<div class="row d-flex justify-content-around">
-           <div class="col-lg-2 col-md-4 col-sm-4" data-toggle="modal" data-target="#modal-1">
+           <div class="col-lg-2 col-md-2 col-sm-2" data-toggle="modal" data-target="#modal-2">
                 <figure>
              <img class="img-thumbnail" src="img/jennie.jpeg"/>
              <figcaption class="figure-caption">Hello, Venez me voir!</figcaption>   
              </figure>
                 
-             <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+             <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   			<div class="modal-dialog" role="document">
     		<div class="modal-content">
       		<div class="modal-header">
@@ -150,12 +154,13 @@
       	    </div>
       		<div class="modal-body">
       	<!-- content goes here  -->
-        	<img class="img-fluid" src="img/churchill.jpg"/>
+        	<img class="img-fluid" src="img/jennie.jpeg"/>
      		<P>Je vous dirai que j'étais un simple homme et que je laisserai l’histoire juger mes actes. L'histoire, cette justiciéres révélera au monde entier quel genre d'homme j'étais!</P>
 
      		</div>
       		<div class="modal-footer">
-        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Valide</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       			</div>
     		</div>
@@ -169,13 +174,13 @@ On me prénomma Winston Leonard Spencer-Churchill, Mais je serai Winston Churchi
 <!--modal pére-->
 
 	
-            <div class="col-lg-4 col-md-4 col-sm-12" data-toggle="modal" data-target="#modal-1">
+            <div class="col-lg-2 col-md-2 col-sm-2" data-toggle="modal" data-target="#modal-3">
                 <figure>
                     <img class="img-thumbnail" src="img/Randolph.jpg"/>
                     <figcaption class="figure-caption">Hello, Venez me voir!</figcaption>   
                 </figure>
                 
-          			<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          			<div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   				<div class="modal-dialog" role="document">
     			<div class="modal-content">
       			<div class="modal-header">
@@ -186,21 +191,25 @@ On me prénomma Winston Leonard Spencer-Churchill, Mais je serai Winston Churchi
       	</div>
       			<div class="modal-body">
       	<!-- content goes here  -->
-        		<img class="img-fluid" src="img/churchill.jpg"/>
+        		<img class="img-fluid" src="img/Randolph.jpg"/>
        			 <P>Je vous dirai que j'étais un simple homme et que je laisserai l’histoire juger mes actes. L'histoire, cette justiciéres révélera au monde entier quel genre d'homme j'étais!</P>
 
      			 </div>
       				<div class="modal-footer">
         			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-      			</div>
+				  
+				  <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Valide</button>
+			<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+					  </div>
+					</div>
     		</div>
   		</div>
 	</div>
  </div>
 </div>
-</div>
-</div>
+
 
 <h2 id="enfance"> Mon enfance </h2>
 <!--Modal enfant chirchill-->
@@ -213,13 +222,13 @@ On me prénomma Winston Leonard Spencer-Churchill, Mais je serai Winston Churchi
 
 
 
-	<div class="col-lg-3 col-md-3 col-sm-3" data-toggle="modal" data-target="#modal-1">
+	<div class="col-lg-2 col-md-2 col-sm-2" data-toggle="modal" data-target="#modal-5">
                 <figure class=" float-left">
                     <img class="img-thumbnail custom-tn" src="img/jeuneCH.jpg"/>
                     <figcaption class="figure-caption">Hello, Venez me voir!</figcaption>   
                 </figure>
                 
-          			<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          			<div class="modal fade" id="modal-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   				<div class="modal-dialog" role="document">
     			<div class="modal-content">
       			<div class="modal-header">
@@ -230,13 +239,14 @@ On me prénomma Winston Leonard Spencer-Churchill, Mais je serai Winston Churchi
       	</div>
       			<div class="modal-body">
       	<!-- content goes here  -->
-        		<img class="img-fluid" src="img/churchill.jpg"/>
+        		<img class="img-fluid" src="img/jeuneCH.jpg"/>
        			 <P>Je vous dirai que j'étais un simple homme et que je laisserai l’histoire juger mes actes. L'histoire, cette justiciéres révélera au monde entier quel genre d'homme j'étais!</P>
 
      			 </div>
       				<div class="modal-footer">
         			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+		<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Valide</button>
       			</div>
     		</div>
   		</div>
@@ -250,9 +260,10 @@ j'avais une imagination débordante. Je pouvais penser à cinqs cents idée avan
 
 
 <h2 id="militaire">Ma carrière militaire</h2>
+
 <div class="row d-inline-flex ">
 
-	<div class="tmil col-7">
+	<div class="tmil col-6">
 	
 	<p>j’entrepris une carrière militaire afin d’avoir un tremplin pour mes ambitions. On me déploya entant que sous-lieutenant en inde en 1895. A ce moment-là, j’ai empêché des révoltes dans les colonies. On me dit très chanceux, en effet durant mes batailles j’ai jamais été blessé même quand je chargeais l'ennemis.Je fût élu députée en 1899 à WESTMINSTER, J'avais mit les armes de coté pour me  mit au joutes oratoire.</p> 
 	<p> Quelques décisions malencontreuse m’a appris à respecter la vie humaine.Je pris les armes en 1911 à Artois sur le sol français en tant que lieutenant-colonel. Et je suis revenu en héros pour mon pays. Par la suite, je suis devenu ministre de la guerre et des aires. Et J’ai gérer la démobilisation de l’armée Britanniques.</p>
@@ -260,14 +271,14 @@ j'avais une imagination débordante. Je pouvais penser à cinqs cents idée avan
 
 <!--modal Camarade de chichil-->
 
-	<div class="teste1">
-            <div class="col-lg-4 col-md-4 col-sm-12" data-toggle="modal" data-target="#modal-1">
+	
+            <div class="col-lg-5 col-md-4 col-sm-12" data-toggle="modal" data-target="#modal-6">
                 <figure>
-                    <img class="img-thumbnail" src="img/churchill.jpg"/>
+                    <img class="img-thumbnail" src="img/churguerre.jpg"/>
                     <figcaption class="figure-caption">Hello, Venez me voir!</figcaption>   
                 </figure>
                 
-          			<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          			<div class="modal fade" id="modal-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   				<div class="modal-dialog" role="document">
     			<div class="modal-content">
       			<div class="modal-header">
@@ -278,34 +289,33 @@ j'avais une imagination débordante. Je pouvais penser à cinqs cents idée avan
       	</div>
       			<div class="modal-body">
       	<!-- content goes here  -->
-        		<img class="img-fluid" src="img/churchill.jpg"/>
+        		<img class="img-fluid" src="img/churguerre.jpg"/>
        			 <P>Je vous dirai que j'étais un simple homme et que je laisserai l’histoire juger mes actes. L'histoire, cette justiciéres révélera au monde entier quel genre d'homme j'étais!</P>
 
      			 </div>
       				<div class="modal-footer">
-        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Valide</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       			</div>
     		</div>
   		</div>
 	</div>
-</div>
-
-
 </div>
 </div>
 
 <h2 id="mondial"> Second guerre, Commandant des armées alliés </h2>
 
 <!--Modal de churchill -->
-	<div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12" data-toggle="modal" data-target="#modal-1">
+	
+		<div class="row  ">
+            <div class="offset-4 col-lg-6 col-md-6 col-sm-12" data-toggle="modal" data-target="#modal-7">
                 <figure>
-                    <img class="img-thumbnail" src="img/churchill.jpg"/>
+                    <img class="img-thumbnail" src="img/churchill2.jpg"/>
                     <figcaption class="figure-caption">Hello, Venez me voir!</figcaption>   
                 </figure>
                 
-          			<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          			<div class="modal fade" id="modal-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   				<div class="modal-dialog" role="document">
     			<div class="modal-content">
       			<div class="modal-header">
@@ -316,12 +326,13 @@ j'avais une imagination débordante. Je pouvais penser à cinqs cents idée avan
       	</div>
       			<div class="modal-body">
       	<!-- content goes here  -->
-        		<img class="img-fluid" src="img/churchill.jpg"/>
+        		<img class="img-fluid" src="img/churchill2.jpg"/>
        			 <P>Je vous dirai que j'étais un simple homme et que je laisserai l’histoire juger mes actes. L'histoire, cette justiciéres révélera au monde entier quel genre d'homme j'étais!</P>
 
      			 </div>
       				<div class="modal-footer">
-        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Valide</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       			</div>
     		</div>
@@ -330,21 +341,22 @@ j'avais une imagination débordante. Je pouvais penser à cinqs cents idée avan
 </div>
 </div>
 
-<div class="row">
+<div class="tgu row">
 	<P>texte</P>
 </div>
 <!--Modal de De gaule -->
 <!--Modal de Rooswelte -->
 <!--modal de staline -->
 
-	<div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12" data-toggle="modal" data-target="#modal-1">
+	<div class="row d-flex justify-content-around">
+
+            <div class=" col-lg-2 col-md-4 col-sm-2" data-toggle="modal" data-target="#modal-8">
                 <figure>
-                    <img class="img-thumbnail" src="img/churchill.jpg"/>
+                    <img class="img-thumbnail" src="img/Charle.jpg"/>
                     <figcaption class="figure-caption">Hello, Venez me voir!</figcaption>   
                 </figure>
                 
-          			<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          			<div class="modal fade" id="modal-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   				<div class="modal-dialog" role="document">
     			<div class="modal-content">
       			<div class="modal-header">
@@ -355,12 +367,46 @@ j'avais une imagination débordante. Je pouvais penser à cinqs cents idée avan
       	</div>
       			<div class="modal-body">
       	<!-- content goes here  -->
-        		<img class="img-fluid" src="img/churchill.jpg"/>
+        		<img class="img-fluid" src="img/Charle.jpg"/>
        			 <P>Je vous dirai que j'étais un simple homme et que je laisserai l’histoire juger mes actes. L'histoire, cette justiciéres révélera au monde entier quel genre d'homme j'étais!</P>
 
      			 </div>
       				<div class="modal-footer">
-        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Valide</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      			</div>
+    		</div>
+  		</div>
+	</div>
+</div>
+
+
+	
+            <div class=" col-lg-2 col-md-2 col-sm-2" data-toggle="modal" data-target="#modal-9">
+                <figure>
+                    <img class="img-thumbnail" src="img/rosw.jpg"/>
+                    <figcaption class="figure-caption">Hello, Venez me voir!</figcaption>   
+                </figure>
+                
+          			<div class="modal fade" id="modal-9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  				<div class="modal-dialog" role="document">
+    			<div class="modal-content">
+      			<div class="modal-header">
+        		<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          		<span aria-hidden="true">&times;</span>
+       		</button>
+      	</div>
+      			<div class="modal-body">
+      	<!-- content goes here  -->
+        		<img class="img-fluid" src="img/rosw.jpg"/>
+       			 <P>Je vous dirai que j'étais un simple homme et que je laisserai l’histoire juger mes actes. L'histoire, cette justiciéres révélera au monde entier quel genre d'homme j'étais!</P>
+
+     			 </div>
+      				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Valide</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       			</div>
     		</div>
@@ -369,13 +415,13 @@ j'avais une imagination débordante. Je pouvais penser à cinqs cents idée avan
 </div>
 
 	
-            <div class="col-lg-4 col-md-4 col-sm-12" data-toggle="modal" data-target="#modal-1">
+            <div class="col-lg-2 col-md-2 col-sm-2" data-toggle="modal" data-target="#modal-10">
                 <figure>
-                    <img class="img-thumbnail" src="img/churchill.jpg"/>
+                    <img class="img-thumbnail" src="img/staline.jpg"/>
                     <figcaption class="figure-caption">Hello, Venez me voir!</figcaption>   
                 </figure>
                 
-          			<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          			<div class="modal fade" id="modal-10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   				<div class="modal-dialog" role="document">
     			<div class="modal-content">
       			<div class="modal-header">
@@ -386,48 +432,19 @@ j'avais une imagination débordante. Je pouvais penser à cinqs cents idée avan
       	</div>
       			<div class="modal-body">
       	<!-- content goes here  -->
-        		<img class="img-fluid" src="img/churchill.jpg"/>
+        		<img class="img-fluid" src="img/staline.jpg"/>
        			 <P>Je vous dirai que j'étais un simple homme et que je laisserai l’histoire juger mes actes. L'histoire, cette justiciéres révélera au monde entier quel genre d'homme j'étais!</P>
 
      			 </div>
       				<div class="modal-footer">
-        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Valide</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       			</div>
     		</div>
   		</div>
 	</div>
 </div>
-
-	
-            <div class="col-lg-4 col-md-4 col-sm-12" data-toggle="modal" data-target="#modal-1">
-                <figure>
-                    <img class="img-thumbnail" src="img/churchill.jpg"/>
-                    <figcaption class="figure-caption">Hello, Venez me voir!</figcaption>   
-                </figure>
-                
-          			<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  				<div class="modal-dialog" role="document">
-    			<div class="modal-content">
-      			<div class="modal-header">
-        		<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          		<span aria-hidden="true">&times;</span>
-       		</button>
-      	</div>
-      			<div class="modal-body">
-      	<!-- content goes here  -->
-        		<img class="img-fluid" src="img/churchill.jpg"/>
-       			 <P>Je vous dirai que j'étais un simple homme et que je laisserai l’histoire juger mes actes. L'histoire, cette justiciéres révélera au monde entier quel genre d'homme j'étais!</P>
-
-     			 </div>
-      				<div class="modal-footer">
-        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-      			</div>
-    		</div>
-  		</div>
-	</div>
 </div>
 
 
@@ -435,14 +452,15 @@ j'avais une imagination débordante. Je pouvais penser à cinqs cents idée avan
 <!--modal de la reine elisabeth-->
 <!--modal de sa femme -->
 
-	<div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12" data-toggle="modal" data-target="#modal-1">
+<div class="row d-flex justify-content-around">
+
+            <div class="col-lg-2 col-md-2 col-sm-2" data-toggle="modal" data-target="#modal-11">
                 <figure>
-                    <img class="img-thumbnail" src="img/churchill.jpg"/>
+                    <img class="img-thumbnail" src="img/femmechur.jpg"/>
                     <figcaption class="figure-caption">Hello, Venez me voir!</figcaption>   
                 </figure>
                 
-          			<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          			<div class="modal fade" id="modal-11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   				<div class="modal-dialog" role="document">
     			<div class="modal-content">
       			<div class="modal-header">
@@ -453,28 +471,32 @@ j'avais une imagination débordante. Je pouvais penser à cinqs cents idée avan
       	</div>
       			<div class="modal-body">
       	<!-- content goes here  -->
-        		<img class="img-fluid" src="img/churchill.jpg"/>
+        		<img class="img-fluid" src="img/femmechur.jpg"/>
        			 <P>Je vous dirai que j'étais un simple homme et que je laisserai l’histoire juger mes actes. L'histoire, cette justiciéres révélera au monde entier quel genre d'homme j'étais!</P>
 
      			 </div>
       				<div class="modal-footer">
-        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Valide</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       			</div>
     		</div>
   		</div>
 	</div>
+	</div>
+
+<div class="tefin">
+	<p> texte </p>
+
 </div>
-
-
-	<div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12" data-toggle="modal" data-target="#modal-1">
+	
+            <div class="col-lg-2 col-md-2 col-sm-2" data-toggle="modal" data-target="#modal-12">
                 <figure>
-                    <img class="img-thumbnail" src="img/churchill.jpg"/>
+                    <img class="img-thumbnail" src="img/elis.jpg"/>
                     <figcaption class="figure-caption">Hello, Venez me voir!</figcaption>   
                 </figure>
                 
-          			<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          			<div class="modal fade" id="modal-12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   				<div class="modal-dialog" role="document">
     			<div class="modal-content">
       			<div class="modal-header">
@@ -485,21 +507,26 @@ j'avais une imagination débordante. Je pouvais penser à cinqs cents idée avan
       	</div>
       			<div class="modal-body">
       	<!-- content goes here  -->
-        		<img class="img-fluid" src="img/churchill.jpg"/>
+        		<img class="img-fluid" src="img/elis.jpg"/>
        			 <P>Je vous dirai que j'étais un simple homme et que je laisserai l’histoire juger mes actes. L'histoire, cette justiciéres révélera au monde entier quel genre d'homme j'étais!</P>
 
      			 </div>
       				<div class="modal-footer">
-        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Valide</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       			</div>
     		</div>
   		</div>
 	</div>
 </div>
+</div>
 
+<footer>
 
-<p> texte </p>
+<p>RESULTAT</p>
+</footer>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -21,18 +21,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', end
 @font-face {
  font-family: "Alex Brush", "American Typewriter";
  src: url(http://fr.allfont.net/allfont.css?fonts=alex-brush), url(//db.onlinewebfonts.com/c/bf35ddaa105b41dd66cb2eb93424c588?family=American+Typewriter);
-}
-
-p{
-	font-family: "American Typewriter";
-}
+}	
 
 h1, h2, h3, h4, h5{
 	font-family: "Alex Brush";
-}
-.row{
-	margin-bottom: 15px;
-	margin-top: 15px;
 }
 
 #header{
@@ -42,16 +34,11 @@ h1, h2, h3, h4, h5{
 
 #tableau{
 	background-color: #ECF0F1;
-	margin-top: 80px;
-}
-
-#conclusion{
-	background-color: #93AFB6;
 }
 
 p{
 	font-size: 20px;
-	color: #F8F8F9;
+	font-family: "American Typewriter";
 }
 
 label{
@@ -80,4 +67,23 @@ button{
     height: 60px;
     line-height: 60px;
     background-color: #f5f5f5
+}
+
+hr{
+	background-color: rgb(53,106,160);
+	height: 5px;
+	margin: 20px;
+}
+
+#logo{
+	height: 300px;
+	margin-top: 40px;
+}
+
+#imgmodal{
+	width: 770px;
+}
+
+th{
+	width: 200px;
 }

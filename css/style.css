@@ -1,10 +1,5 @@
 body{
-  background-image: url(http://photos1.blogger.com/blogger/3390/1024/1024/Westminster_from_London_Eye_night.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
+  background-color: lightgray;
 
 }
 figure {
@@ -19,13 +14,70 @@ img {
   position: center
 }
 
+
+/***************/
+/* My Timeline */
+/***************/
+
+
 #timeline {
   font-size:8vw;
   color:grey;
-  text-shadow:0 0 20px #00FFFC,2px 3px 3px #141414, 0 0 100px #00D4D1;
-  color:gray;
+  text-shadow:
+  1px 1px 0 #CCC,
+  2px 2px 0 #CCC,
+  3px 3px 0 #444,
+  4px 4px 0 #444,
+  5px 5px 0 #444,
+  6px 6px 0 #444;
 }
- 
+
+/***************/
+/* My Timeline */
+/***************/
+
+.image  {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.reward {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.passe:hover .image {
+  opacity: 0.5;
+}
+
+.passe:hover .reward {
+  opacity: 1;
+}
+
+.date {
+  text-align: center;
+
+}
+
+.text {
+  background-color: #C0C0C0;
+  color: black;
+  font-size: 3.5vw;
+  padding: 16px 32px;
+  text-align: 50%;
+  border-radius: 25px;
+}
+
 figcaption {
 opacity:0;
 text-align:center;
@@ -44,7 +96,6 @@ transition:all 0.5s;
   opacity:0.85;
 }
 
-}
 /*timeline css*/
 .timeline {
   list-style: none;
@@ -90,8 +141,6 @@ transition:all 0.5s;
   width: 95%;
   float: left;
   border: 1px solid #e9e9e9;
-  /*border-radius: 2px;*/
-  /*padding: 20px;*/
   position: relative;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -129,14 +178,7 @@ transition:all 0.5s;
   position: absolute;
   top: 16px;
   right: -12px;
-  /*background-color: #999999;*/
   z-index: 100;
-  /*
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  */
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
@@ -192,11 +234,7 @@ transition:all 0.5s;
     filter:alpha(opacity=0);
     
 }
-.tooltip.in{
-    /*opacity:0;
-    filter:alpha(opacity=80);*/
-    
-}
+
 .tooltip.top{
     margin-top:-2px;
 }

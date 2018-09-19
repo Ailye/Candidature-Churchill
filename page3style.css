@@ -5,10 +5,12 @@
 
 #header{
 	background-color: #346684;
+	height: 80px;
 }
 
 #tableau{
 	background-color: #ECF0F1;
+	margin-top: 80px;
 }
 
 #conclusion{
@@ -35,4 +37,13 @@ label{
 
 span{
 	color: #F8F8F9;
+}
+
+#org{
+	pull-right;
+}
+
+button{
+	padding-top: 6px;
+	padding-bottom: 0px;
 }

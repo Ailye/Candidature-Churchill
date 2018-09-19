@@ -16,15 +16,3 @@ $("#selector").on("click", function(event)
 	}			)
 
 
-
-$("Churchcigar").on("hover", function(event)
-
-	{
-		write("<h3>Galerie photos du bogosse</h3>");
-
-
-	}
-
-					)
-
-

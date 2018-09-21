@@ -82,10 +82,23 @@ hr{
 	margin-right: auto;
 }
 
-#imgmodal{
+.imgmodal{
 	width: 770px;
 }
 
 th{
 	width: 200px;
+	height: 80px;
+	line-height: 80px;
 }
+
+i{
+	margin-left: 50%;
+	margin-right: 50%;
+}
+
+td{
+	height: 80px;
+	line-height: 80px;
+}
+

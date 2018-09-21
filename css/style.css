@@ -143,6 +143,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', end
   background-color: rgb(53,106,160);
 }
 
+.timeline-heading a {
+  font-size: 4vw;
+}
+
 .timeline > li > .timeline-panel:hover{
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.175);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.726);

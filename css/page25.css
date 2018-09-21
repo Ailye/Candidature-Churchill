@@ -69,10 +69,6 @@ strong
 	color: red;
 }
 
-#esai
-{
-	display: box;
-}
 
 .custom-tn{
 	
@@ -85,14 +81,11 @@ strong
 {
 	margin-left: 1rem;
 }
-.teste1
-{
-	float: center;
-}
-#par1
+
+.par1
 {
  margin-top: 10px;
- background-color: rgb(220, 227, 235, 0.8);
+ background: rgba(220, 227, 235, 0.8);
  border-radius: 25px;
  padding: 20px;
  

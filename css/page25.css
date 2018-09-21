@@ -1,0 +1,120 @@
+html {
+	position: relative;
+	min-height: 100%;
+  }
+  
+  body {
+	margin-bottom: 10px;
+  }
+  
+  nav{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#356aa0+0,356aa0+100;Blue+Flat */
+  background: rgb(53, 106, 160); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(53,106,160,1) 0%, rgba(53,106,160,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=1 ); /* IE6-9 */
+  
+	  color: #FFF
+  }
+
+
+
+
+@font-face {
+	font-family: "Alex Brush", "American Typewriter";
+	src: url(http://fr.allfont.net/allfont.css?fonts=alex-brush), url(//db.onlinewebfonts.com/c/bf35ddaa105b41dd66cb2eb93424c588?family=American+Typewriter);
+   }
+   
+   div{
+	   font-family: "American Typewriter";
+	   
+   }
+   
+   h1, h2, h3, h4, h5{
+	   font-family: "Alex Brush";
+	   
+   }
+
+body
+{
+	width: 100%;
+	background-image: url("../img/fe2.jpg");
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center;
+	
+}
+
+h1
+{
+	text-align: center;
+	font-size: 50px;
+
+}
+
+p{
+	margin-bottom: 0rem;
+}
+
+h2
+{
+	text-align: center;
+	font-size: 25px;
+}
+
+
+strong
+{
+	color: red;
+}
+
+
+.custom-tn{
+	
+	width: auto;
+	height: 350px;
+	float: left;
+	margin: 2px;
+}
+.tenfant
+{
+	margin-left: 1rem;
+}
+
+.par1
+{
+ margin-top: 10px;
+ background: rgba(220, 227, 235, 0.8);
+ border-radius: 25px;
+ padding: 20px;
+ 
+}
+
+.jour
+{
+ padding:3px;
+}
+
+.resul
+{
+	margin-top: 10px;
+	background: rgb(53, 106, 160);
+	border: 10px black;
+	border-radius: 10px;
+}
+
+
+@media all and (max-width: 900px)
+{
+.carousel
+{
+display: none;
+
+
+}
+h1
+{
+	font-size: 40px;
+}
+}
